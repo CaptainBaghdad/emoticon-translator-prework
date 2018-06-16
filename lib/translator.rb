@@ -36,7 +36,9 @@ def get_english_meaning(file,emoticon)
 
    two_key_hash = load_library(file)
    
-   a. select {|k,v| v.include?(emoticon)? k.to_s: "Sorry mofo"}
+   a. each do |k,v| 
+     v.include?(emoticon)? k.to_s : "Sorry mofo"
+   end 
  
   
   
