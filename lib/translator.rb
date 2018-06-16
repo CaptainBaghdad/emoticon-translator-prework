@@ -27,7 +27,7 @@ end
 def get_japanese_emoticon(file,emoticon)
   # code goes here
   a = load_library(file)
-  a["get_emoticon"].include?(emoticon) ? a["get_emoticon"]["#{emoticon}"] : "Sorry, not an emoticon" 
+  a["get_emoticon"].include?(emoticon) ? a["get_emoticon"]["#{emoticon}"] : "Sorry, that emoticon was not found" 
 end
 
 def get_english_meaning
