@@ -33,8 +33,10 @@ end
 def get_english_meaning(file,emoticon)
   # code goes here
   a = YAML.load_file("#{file}")
- puts a
+
    two_key_hash = load_library(file)
+   
+   a. select {|k,v| v.include?(emoticon)? k.to_s: "Sorry mofo"}
  
   
   
