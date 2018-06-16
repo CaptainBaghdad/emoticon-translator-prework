@@ -35,6 +35,7 @@ def get_english_meaning(file,emoticon)
   a = YAML.load_file("#{file}")
 
    two_key_hash = load_library(file)
+   ans = two_key_hash["get_meaning"][emoticon]
    
    
  
