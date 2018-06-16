@@ -33,10 +33,7 @@ end
 def get_english_meaning(file,emoticon)
   # code goes here
   a = YAML.load_file("#{file}")
-  a.each do |k,v|
-    puts k
-    
-  end 
+ puts a
    two_key_hash = load_library(file)
  
   
