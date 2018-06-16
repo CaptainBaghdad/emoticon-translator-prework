@@ -36,10 +36,7 @@ def get_english_meaning(file,emoticon)
 
    two_key_hash = load_library(file)
    
-   a. each do |k,v| 
-     puts v
-     v.include?(emoticon)? k.to_s : "Sorry mofo"
-   end 
+   
  
   
   
