@@ -37,8 +37,10 @@ def get_english_meaning(file,emoticon)
    two_key_hash = load_library(file)
    ans = two_key_hash["get_meaning"][emoticon]
    
-   
- 
+   if ans == nil 
+     ans = "Sorry, that emoticon was not found"
+   end 
+    ans
   
   
   
